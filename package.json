@@ -1,6 +1,24 @@
 {
   "dependencies": {
     "express": "^4.17.3",
-    "fs": "^0.0.1-security"
-  }
+    "fs": "^0.0.1-security",
+    "require-stack": "^1.0.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "note-taker",
+  "description": "Note Taker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christiandc19/note-taker.git"
+  },
+  "author": "Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christiandc19/note-taker/issues"
+  },
+  "homepage": "https://github.com/christiandc19/note-taker#readme"
 }
