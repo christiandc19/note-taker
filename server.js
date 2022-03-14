@@ -1,7 +1,10 @@
 // Dependencies
+const { AsyncLocalStorage } = require("async_hooks");
+const { table } = require("console");
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const { connected } = require("process");
 const database = require("./public/db/db.json")
 
 
@@ -50,7 +53,7 @@ app.route("/api/notes")
         newNote.id = highestId + 1;
         database.push(newNote)
 
-        // Write the db.json.
+        // Write the db.json file
         fs.writeFile(jsonFilePath, JSON.stringify(database), function (err) {
 
             if (err) {
@@ -89,3 +92,4 @@ app.delete("/api/notes/:id", function (req, res) {
 app.listen(PORT, function () {
     console.log("App listening on PORT http://localhost:" + PORT);
 });
+
