@@ -28,6 +28,7 @@
   ## DEPLOYMENT  
   ### https://christiandc19.github.io/note-taker/
   ### https://github.com/christiandc19/note-taker/
+  ### Heroku App Link: https://nameless-falls-11259.herokuapp.com/
   ------------------
   ## QUESTIONS  
   ### If you have any questions, you may contact me at:
